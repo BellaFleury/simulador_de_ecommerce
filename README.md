@@ -62,7 +62,7 @@ app.py (Streamlit)
   └── usa apenas Loja — toda lógica fica nas classes
 ```
 
-# Como rodar
+#Como rodar
 
 Pré-requisito: Python 3.8 ou superior.
 
@@ -95,9 +95,6 @@ streamlit run app.py
 O navegador abrirá automaticamente em `http://localhost:8501`.
 
 #Cupons disponíveis
-
-       Código               | Desconto 
-----------------------------|----------
  `PRIMEIRACOMPRA10`         | 10%       
  `VERAO15`                  | 15%      
  `BLACKFRIDAY20`            | 20%      
