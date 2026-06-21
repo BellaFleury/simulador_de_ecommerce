@@ -1,0 +1,4 @@
+requirements.txt
+#arquivo lista todas as bibliotecas que o projeto precisa. Quando alguém quiser rodar o projeto, instala tudo com um comando só.
+
+streamlit==1.45.1
