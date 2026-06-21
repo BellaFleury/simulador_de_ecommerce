@@ -15,7 +15,7 @@ Simulador de e-commerce em Python (três fases):
 - Feedback visual de erros (estoque, cupom inválido, carrinho vazio)
 
 #Estrutura do Projeto
-````
+```
 ecommerce-simulator/
 │
 ├── Fase 1 — Procedural
@@ -96,10 +96,9 @@ O navegador abrirá automaticamente em `http://localhost:8501`.
 
 #Cupons disponíveis
 
- Código        | Desconto 
----------------|----------
- `DESCONTO5`   | 5%       
- `WELCOME10`   | 10%      
- `SEMESTRAL15` | 15%      
- `PROMO20`     | 20%      
- `BLACKFRIDAY` | 30%      
+       Código               | Desconto 
+----------------------------|----------
+ `PRIMEIRACOMPRA10`         | 10%       
+ `VERAO15`                  | 15%      
+ `BLACKFRIDAY20`            | 20%      
+ `SEMANADOCONSUMIDOR15`     | 15%         
