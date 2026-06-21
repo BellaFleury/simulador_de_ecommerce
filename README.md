@@ -95,6 +95,7 @@ streamlit run app.py
 O navegador abrirá automaticamente em `http://localhost:8501`.
 
 #Cupons disponíveis
+
  `PRIMEIRACOMPRA10`         | 10%       
  `VERAO15`                  | 15%      
  `BLACKFRIDAY20`            | 20%      
