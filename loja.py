@@ -1,4 +1,4 @@
-# loja.py 
+# loja.py
 # Classe Loja que orquestra catálogo, carrinho e pedidos
 
 from produto import ProdutoRoupa, ProdutoAcessorioModa
@@ -17,16 +17,16 @@ class Loja:
 
     def __criar_catalogo(self):
         return [
-            ProdutoRoupa(1,  "Blusa Florida",       70.00,  25, estacao="Verão"),
-            ProdutoRoupa(2,  "Vestido",              80.00,  30, estacao="Verão"),
-            ProdutoAcessorioModa(3, "Brinco",        15.00,  25, tipo="Bijuteria"),
-            ProdutoAcessorioModa(4, "Cinto de Couro",20.00,  10, tipo="Couro"),
-            ProdutoRoupa(5,  "Calça Jeans",         140.00,  40, estacao="Casual"),
-            ProdutoRoupa(6,  "Calça Social",        120.00,  20, estacao="Formal"),
-            ProdutoRoupa(7,  "Camiseta Inverno",     80.00,  15, estacao="Inverno"),
-            ProdutoRoupa(8,  "Jaqueta",             100.00,  45, estacao="Inverno"),
-            ProdutoRoupa(9,  "Suéter",               75.00,  30, estacao="Inverno"),
-            ProdutoRoupa(10, "Conjunto Academia",   160.00,  25, estacao="Fitness"),
+            ProdutoRoupa(1,  "Blusa Florida", 70.00,  25, estacao="Verão"),
+            ProdutoRoupa(2,  "Vestido", 80.00,  30, estacao="Verão"),
+            ProdutoAcessorioModa(3, "Brinco", 15.00,  25, tipo="Bijuteria"),
+            ProdutoAcessorioModa(4, "Cinto de Couro", 20.00,  10, tipo="Couro"),
+            ProdutoRoupa(5,  "Calça Jeans", 140.00,  40, estacao="Casual"),
+            ProdutoRoupa(6,  "Calça Social", 120.00,  20, estacao="Formal"),
+            ProdutoRoupa(7,  "Camiseta Inverno", 80.00,  15, estacao="Inverno"),
+            ProdutoRoupa(8,  "Jaqueta", 100.00,  45, estacao="Inverno"),
+            ProdutoRoupa(9,  "Suéter", 75.00,  30, estacao="Inverno"),
+            ProdutoRoupa(10, "Conjunto Academia", 160.00,  25, estacao="Fitness"),
         ]
 
     # --- Catálogo ---
@@ -52,7 +52,7 @@ class Loja:
         print(f" {self.__nome.upper()} — CATÁLOGO DE PRODUTOS")
         print("=" * 70)
         for categoria in self.listar_categorias():
-            print(f"\n  {categoria}")
+            print(f"\n  📂 {categoria}")
             for p in self.buscar_por_categoria(categoria):
                 print(f"  {p}")
         print()
@@ -112,6 +112,10 @@ class Loja:
         self.__historico.append(pedido)
         self.__carrinho.limpar()
         return True, pedido
+
+    @property
+    def historico(self):
+        return list(self.__historico)
 
     def exibir_historico(self):
         if not self.__historico:
